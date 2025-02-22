@@ -1,5 +1,7 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
+import { pedidos} from "./pedidos.js";
+
 
 export const clientes = sequelize.define("clientes",{
     id:{
@@ -8,10 +10,13 @@ export const clientes = sequelize.define("clientes",{
         autoIncrement:true,
     },
     nombre:{
-        type:DataTypes.STRING
+        type:DataTypes.STRING,
+        allowNull: false
     },
     email:{
         type:DataTypes.STRING,
+        allowNull: false,
+        unique: true,
     },
     telefono:{
         type:DataTypes.STRING,
@@ -20,5 +25,15 @@ export const clientes = sequelize.define("clientes",{
         type:DataTypes.STRING,
     },
 },{
-    timestamps:false
+    timestamps:true
 });
+
+clientes.hasMany(pedidos ,{
+    foreignKey: 'id_cliente',
+    sourceKey: 'id'
+})
+
+pedidos.belongsTo(clientes,{
+    foreignKey: 'id_cliente',
+    targetKey: "id"
+})

@@ -2,6 +2,7 @@ import app from "./app.js";
 import {sequelize} from "./database/database.js";
 
 import './models/clientes.js'
+import './models/pedidos.js'
 
 async function main () {
     try {
