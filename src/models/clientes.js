@@ -16,7 +16,7 @@ export const clientes = sequelize.define("clientes",{
     email:{
         type:DataTypes.STRING,
         allowNull: false,
-        unique: true,
+        
     },
     telefono:{
         type:DataTypes.STRING,
