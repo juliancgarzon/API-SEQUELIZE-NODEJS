@@ -1,4 +1,5 @@
 import {clientes} from "../models/clientes.js";
+import {pedidos} from "../models/pedidos.js";
 
 export const getClientes = async (req, res )=>{
     try {
@@ -29,7 +30,7 @@ export async function getclientebyid(req, res) {
 }
 
 
-    export const createClientes = async (req, res) => {
+export const createClientes = async (req, res) => {
         const { nombre, email, telefono, direccion } = req.body;
         try {
             const newclient = await clientes.create({
@@ -94,6 +95,15 @@ export const deleteClientes = async (req, res) => {
     }
 };
 
+export async function getclientepedidos(req, res) {
+    const { id } = req.params;
+    try {
+        const listaPedidos = await pedidos.findAll({ 
+            where: { id_cliente: id },
+        });
+        res.json(listaPedidos);
+    } catch (e) {
+        return res.status(500).json({ message: e.message });
+    }
+}
 
-
-    
