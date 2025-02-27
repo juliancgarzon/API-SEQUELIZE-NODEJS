@@ -27,12 +27,12 @@ npm install
 ### 3️⃣ Configurar Variables de Entorno
 Crea un archivo **.env** en la raíz del proyecto y agrega:
 ```ini
-DB_NAME=database-api
-DB_USER=postgres
-DB_PASSWORD=1234
+DB_NAME=tubasededatos
+DB_USER=tuusuario
+DB_PASSWORD=tucontraseña
 DB_HOST=localhost
 DB_PORT=5432
-DATABASE_URL=postgresql://usuario:password@host:puerto/db_name
+DATABASE_URL=tuurldelabasededatos
 ```
 
 ### 4️⃣ Ejecutar la Aplicación
