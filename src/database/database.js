@@ -2,14 +2,14 @@ import Sequelize from 'sequelize';
 import dotenv from 'dotenv';
 dotenv.config();
 
-const DB_URL = process.env.DATABASE_URL || process.env.DB_URL; // 
+const DB_URL = process.env.DATABASE_URL || process.env.DB_URL; 
 
 export const sequelize = DB_URL
   ? new Sequelize(DB_URL, {
       dialect: 'postgres',
       logging: false,
       dialectOptions: {
-        ssl: { require: true, rejectUnauthorized: false }, // 🔥 Importante para Render
+        ssl: { require: true, rejectUnauthorized: false }, 
       },
     })
   : new Sequelize(

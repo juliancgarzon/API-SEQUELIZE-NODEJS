@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "68767a8b-57e3-4cd6-a3d0-453c3f6d6f42",
+		"name": "api-rest-postgres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38748526"
+	},
+	"item": [
+		{
+			"name": "get client",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpjZ2Fyem9uIiwicGFzc3dvcmQiOiIxMjM0NSIsInJvbCI6IkNMSUVOVCIsImVtYWlsIjoianVsaWFuZ2Fyb25AbGl2ZS5jb20iLCJpYXQiOjE3MjgxODY2NTMsImV4cCI6MTcyODE5MDI1M30.jjkh89tDeXj19aLLUS_NvKuxXMK7ruo8MOGVZH0-XLU",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api-sequelize-nodejs.onrender.com/clientes",
+					"protocol": "https",
+					"host": [
+						"api-sequelize-nodejs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get pedidos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpjZ2Fyem9uIiwicGFzc3dvcmQiOiIxMjM0NSIsInJvbCI6IkNMSUVOVCIsImVtYWlsIjoianVsaWFuZ2Fyb25AbGl2ZS5jb20iLCJpYXQiOjE3MjgxODY2NTMsImV4cCI6MTcyODE5MDI1M30.jjkh89tDeXj19aLLUS_NvKuxXMK7ruo8MOGVZH0-XLU",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api-sequelize-nodejs.onrender.com/pedidos/1",
+					"protocol": "https",
+					"host": [
+						"api-sequelize-nodejs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"pedidos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get clientes pedidos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpjZ2Fyem9uIiwicGFzc3dvcmQiOiIxMjM0NSIsInJvbCI6IkNMSUVOVCIsImVtYWlsIjoianVsaWFuZ2Fyb25AbGl2ZS5jb20iLCJpYXQiOjE3MjgxODY2NTMsImV4cCI6MTcyODE5MDI1M30.jjkh89tDeXj19aLLUS_NvKuxXMK7ruo8MOGVZH0-XLU",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api-sequelize-nodejs.onrender.com/clientes/3/pedidos",
+					"protocol": "https",
+					"host": [
+						"api-sequelize-nodejs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"clientes",
+						"3",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get client by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoianVsaWFuY2dhcnpvbiIsImlhdCI6MTcyNzkyOTMwNCwiZXhwIjoxNzI3OTMyOTA0fQ.o08Dw_e8CE3YN1RTY7Qp3aXfByZ7t4Nl8DY0YWTcEGc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/clientes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"clientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get pedidos by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoianVsaWFuY2dhcnpvbiIsImlhdCI6MTcyNzkyOTMwNCwiZXhwIjoxNzI3OTMyOTA0fQ.o08Dw_e8CE3YN1RTY7Qp3aXfByZ7t4Nl8DY0YWTcEGc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-sequelize-nodejs.onrender.com/pedidos/3",
+					"protocol": "https",
+					"host": [
+						"api-sequelize-nodejs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"pedidos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"nombre\": \"juli garzon \",\n        \"email\": \"juli@emil.com\",\n        \"telefono\": \"3285678965\",\n        \"direccion\": \"Calle 7 #8-7, bogota\"\n    }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-sequelize-nodejs.onrender.com/clientes",
+					"protocol": "https",
+					"host": [
+						"api-sequelize-nodejs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create pedidos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"fecha\": \"2024-09-15T14:30:00.000Z\",\n        \"total\": \"420.56\",\n        \"id_cliente\": \"4\"\n        \n    }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-sequelize-nodejs.onrender.com/pedidos",
+					"protocol": "https",
+					"host": [
+						"api-sequelize-nodejs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete client",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoianVsaWFuY2dhcnpvbiIsImlhdCI6MTcyNzkyOTMwNCwiZXhwIjoxNzI3OTMyOTA0fQ.o08Dw_e8CE3YN1RTY7Qp3aXfByZ7t4Nl8DY0YWTcEGc",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api-sequelize-nodejs.onrender.com/clientes/3",
+					"protocol": "https",
+					"host": [
+						"api-sequelize-nodejs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"clientes",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete pedidos",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoianVsaWFuY2dhcnpvbiIsImlhdCI6MTcyNzkyOTMwNCwiZXhwIjoxNzI3OTMyOTA0fQ.o08Dw_e8CE3YN1RTY7Qp3aXfByZ7t4Nl8DY0YWTcEGc",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api-sequelize-nodejs.onrender.com/pedidos/1",
+					"protocol": "https",
+					"host": [
+						"api-sequelize-nodejs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"pedidos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put client By Id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoianVsaWFuY2dhcnpvbiIsImlhdCI6MTcyNzkyOTMwNCwiZXhwIjoxNzI3OTMyOTA0fQ.o08Dw_e8CE3YN1RTY7Qp3aXfByZ7t4Nl8DY0YWTcEGc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "      {\n        \"nombre\": \"camilo garzon\",\n        \"email\": \"jcg6.@email.com\",\n        \"telefono\": \"3156478223\",\n        \"direccion\": \"Carrera 18 #3-5, bogota\"\n    }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-sequelize-nodejs.onrender.com/clientes/1100",
+					"protocol": "https",
+					"host": [
+						"api-sequelize-nodejs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"clientes",
+						"1100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put pedido By id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoianVsaWFuY2dhcnpvbiIsImlhdCI6MTcyNzkyOTMwNCwiZXhwIjoxNzI3OTMyOTA0fQ.o08Dw_e8CE3YN1RTY7Qp3aXfByZ7t4Nl8DY0YWTcEGc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"fecha\": \"2024-09-18T14:30:00.000Z\",\n        \"total\": \"300.54\",\n        \"id_cliente\": \"29\"\n        \n    }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-sequelize-nodejs.onrender.com/pedidos/3",
+					"protocol": "https",
+					"host": [
+						"api-sequelize-nodejs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"pedidos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
