@@ -1,5 +1,7 @@
 # API REST con Node.js, Express, Sequelize y PostgreSQL
 
+![Descripción de la imagen](images/rutes.png)
+
 ## 📌 Descripción
 Este proyecto es una API REST desarrollada con **Node.js**, **Express**, **Sequelize** y **PostgreSQL**. Permite la gestión de clientes y pedidos mediante operaciones CRUD.
 
